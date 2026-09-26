@@ -25,7 +25,7 @@ def test_get_remote_url_https(mock_run_git_command):
 @patch("gitguard.analyzer.run_git_command")
 def test_get_remote_url_ssh(mock_run_git_command):
     mock_run_git_command.return_value = (
-        "git@github.com:vishwas9302821830/github_portfolio.git"
+        "git@github.com:hellovishwas/github_portfolio.git"
     )
 
     owner, repo = get_remote_url()
