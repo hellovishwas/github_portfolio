@@ -18,7 +18,7 @@ def test_get_remote_url_https(mock_run_git_command):
 
     owner, repo = get_remote_url()
 
-    assert owner == "vishwas9302821830"
+    assert owner == "hellovishwas"
     assert repo == "github_portfolio"
 
 
@@ -30,7 +30,7 @@ def test_get_remote_url_ssh(mock_run_git_command):
 
     owner, repo = get_remote_url()
 
-    assert owner == "vishwas9302821830"
+    assert owner == "hellovishwas"
     assert repo == "github_portfolio"
 
 @patch("gitguard.analyzer.get_branch_count")
